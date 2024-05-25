@@ -18,4 +18,8 @@ bcrypt = Bcrypt(app)
 # manage the app login system
 login_manager = LoginManager(app) 
 
+# redirect non logged in users to login page
+login_manager.login_view = "login_page"
+login_manager.login_message_category = "info"
+
 from market import routes
