@@ -1,6 +1,6 @@
 # Flask Open Market Web App
 
-Welcome to the Flask Open Market Web App! This application serves as a guide for getting started with the Flask web framework and demonstrates how to build a website using Flask.
+Welcome to the Flask Open Market Web App! This application serves as a guide for getting started with DevOps with a Flask web framework and demonstrates a website using Flask.
 
 ## About
 
