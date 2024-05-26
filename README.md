@@ -14,7 +14,7 @@ To run this Flask app locally, follow these steps:
 2. Navigate to the project directory in your terminal.
 3. Set up a virtual environment using `virtualenv` or `venv`.
 4. Install the required dependencies using `pip install -r requirements.txt`.
-5. Run the Flask application using `python app.py`.
+5. Run the Flask application using `python3 run.py`.
 6. Access the application in your web browser at `http://localhost:5000`.
 
 ## Features
