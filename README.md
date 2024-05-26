@@ -4,7 +4,7 @@ Welcome to the Flask Open Market Web App! This application serves as a guide for
 
 ## About
 
-In this video series, we delve into understanding the Flask web framework, exploring its features, and learning how to utilize them effectively to create dynamic web applications. Throughout the series, we focus on building a real website that simulates an open market, allowing different users to browse items and make purchases. Additionally, the app incorporates a budget system for each user, providing a comprehensive example of Flask application development.
+Flask Open Market Web App is a real website that simulates an open market, allowing different users to browse items and make purchases. Additionally, the app incorporates a budget system for each user, providing a comprehensive example of Flask application development using the Flask web framework. 
 
 ## Getting Started
 
