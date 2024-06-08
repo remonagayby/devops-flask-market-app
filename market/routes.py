@@ -82,3 +82,17 @@ def logout_page():
      logout_user()
      flash("You have been logged out!", category='info')
      return redirect(url_for('home_page'))
+
+
+
+@app.route('/visits')
+def get_visits():
+    visits = load_visits()
+    return jsonify({'visits': visits})
+
+@app.route('/increment')
+def increment_visits():
+    visits = load_visits()
+    visits += 1
+    save_visits(visits)
+    return jsonify({'message': 'Visits incremented successfully!'})
