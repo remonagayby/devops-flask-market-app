@@ -1,10 +1,11 @@
 from market import app
 from flask import render_template, redirect, url_for, flash, request, Flask, jsonify
-from visits import load_visits, save_visits  # Importing load_visits and save_visits from visits.py
 from market.models import Item, User
 from market import db
 from market.forms import RegisterForm, LoginForm, PurchaseItemForm, SellItemForm
 from flask_login import login_user, logout_user, login_required, current_user
+from market.visits import load_visits, save_visits  # Importing load_visits and save_visits from visits.py
+
 
 @app.route("/")
 @app.route("/home")
