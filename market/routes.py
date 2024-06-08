@@ -1,5 +1,6 @@
 from market import app
-from flask import render_template, redirect, url_for, flash, request
+from flask import render_template, redirect, url_for, flash, request, Flask, jsonify
+from visits import load_visits, save_visits  # Importing load_visits and save_visits from visits.py
 from market.models import Item, User
 from market import db
 from market.forms import RegisterForm, LoginForm, PurchaseItemForm, SellItemForm
@@ -8,6 +9,7 @@ from flask_login import login_user, logout_user, login_required, current_user
 @app.route("/")
 @app.route("/home")
 def home_page():
+    increment_visits()
     return render_template('home.html')
 
 @app.route("/market", methods=['GET', 'POST'])
@@ -77,20 +79,11 @@ def login_page():
                flash('Invalid User Name or Password', category='danger')
      return render_template('login.html', form=form)
 
-@app.route("/logout")
-def logout_page():
-     logout_user()
-     flash("You have been logged out!", category='info')
-     return redirect(url_for('home_page'))
-
-
-
 @app.route('/visits')
 def get_visits():
     visits = load_visits()
     return jsonify({'visits': visits})
 
-@app.route('/increment')
 def increment_visits():
     visits = load_visits()
     visits += 1
