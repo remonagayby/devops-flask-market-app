@@ -11,11 +11,45 @@ Flask Open Market Web App is a real website that simulates an open market, allow
 To run this Flask app locally, follow these steps:
 
 1. Clone this repository to your local machine.
+
+``` bash
+git clone https://github.com/remonagayby/devops-flask-market-app.git
+```
 2. Navigate to the project directory in your terminal.
-3. Set up a virtual environment using `virtualenv` or `venv`.
-4. Install the required dependencies using `pip install -r requirements.txt`.
-5. Run the Flask application using `python3 run.py`.
-6. Access the application in your web browser at `http://localhost:5000`.
+
+3. Set up a virtual environment using
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip3 install flask
+```
+
+4. Install the required dependencies using
+
+```bash
+pip install -r requirements.txt
+```
+
+5. Run the Flask application using
+
+```bash
+python3 run.py
+```
+
+6. Access the application in your web browser at
+
+```bash
+http://localhost:5000
+```
+
+OR through the docker hub repository
+
+```bash
+docker pull remonagayby/devops-flask-market:latest
+docker run -d -p 5000:5000 remonagayby/devops-flask-market:latest
+``` 
+
 
 ## Features
 
