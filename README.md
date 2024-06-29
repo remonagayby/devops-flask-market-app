@@ -50,6 +50,13 @@ docker pull remonagayby/devops-flask-market:latest
 docker run -d -p 5000:5000 remonagayby/devops-flask-market:latest
 ``` 
 
+## Running Tests
+Navigate to the project directory in your terminal.
+
+Run the tests using
+```bash
+pytest
+```
 
 ## Features
 
