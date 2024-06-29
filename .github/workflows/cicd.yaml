@@ -22,10 +22,10 @@ jobs:
           cache: 'pip'
 
       - name: Install Dependencies
-        uses: |
+        run: |
           python -m venv venv
           source venv/bin/activate
           pip install -r requirements.txt
 
       - name: Run Tests
-        uses: pytest
+        run: pytest
