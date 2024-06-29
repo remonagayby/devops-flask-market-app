@@ -22,3 +22,6 @@ class MarketAppTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+    # Just to comment to trigger github actions
+
